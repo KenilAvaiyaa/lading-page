@@ -1,4 +1,4 @@
-// landing page animation
+// // landing page animation
 function landinganimation() {
     var tl = gsap.timeline({
         duration: 1.5,
@@ -55,7 +55,7 @@ function landinganimation() {
 landinganimation()
 
 
-// hero page 
+// // hero page 
 function textmove(){
     var tl3 = gsap.timeline({
         scrollTrigger:{
@@ -74,3 +74,49 @@ function textmove(){
     },'move')
 }
 textmove()
+
+// overlay effect
+
+function overflow(){
+    var tl4 = gsap.timeline();
+    tl4.to(".overlay",{
+        delay:5,
+        top:0,
+        duration:1
+    })
+    .to(".overlay",{
+        delay:1,
+        top:-200,
+        duration:1
+    })
+    .to(".overlay",{
+        top:200,
+        duration:0
+    })
+}
+overflow()
+setInterval(overflow,5000)
+
+// change images
+
+// function changeimg(){
+    // var images=["https://maelanlemeur.com/wp-content/uploads/2023/01/MarcSolene.webp","https://maelanlemeur.com/wp-content/uploads/2023/01/Polder.webp","https://maelanlemeur.com/wp-content/uploads/2023/01/RalentirDiegoDOnofrio.webp","https://maelanlemeur.com/wp-content/uploads/2023/01/FermeDeKerbiguet.webp"]
+    // for (var i=0;i<images.length;i++){
+
+//         var pageimage = document.querySelector(".page1")
+//         pageimage.style.backgroundImage= `url(${images[randoimag]})`
+//     }
+// }
+// changeimg()
+// setInterval(changeimg,1000)
+
+var images=["https://maelanlemeur.com/wp-content/uploads/2023/01/MarcSolene.webp","https://maelanlemeur.com/wp-content/uploads/2023/01/Polder.webp","https://maelanlemeur.com/wp-content/uploads/2023/01/RalentirDiegoDOnofrio.webp","https://maelanlemeur.com/wp-content/uploads/2023/01/FermeDeKerbiguet.webp"]
+var i = 0
+while (i <images.length) {
+    function changeimg(){
+        var pageimage = document.querySelector(".page1")
+        pageimage.style.backgroundImage= `url(${images[i]})`
+        // i++
+    }
+    setInterval(changeimg,4000)
+}

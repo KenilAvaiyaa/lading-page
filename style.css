@@ -18,7 +18,7 @@ html,body{
     width: 100%;
     position: fixed;
     background-color: #EEE9CC;
-    z-index: 9;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,34 +63,59 @@ html,body{
 
 
 .elem{
+    /* background-color: aliceblue; */
     border-bottom: 2px solid #EEE9CC;
     height: 25vh;
     position: relative;
     color: #EEE9CC;
     align-items: center;
+    overflow: hidden;
 }
-
+.overlay{
+    position: absolute;
+    top: -100;
+    left: 0;
+    height: 100%;
+    z-index: 9;
+    width: 100%;
+    background-color: #1E1915;
+}
 .elem h1{
+    position: absolute;
+    z-index: 99;
     margin-left: 3vw;
     font-size:10vw;
 }
 
 .e2 h1{
-margin-right: 3vw;
-display: flex;
-justify-content: flex-end;
-align-items: center;
+    position: absolute;
+    z-index: 99;
+    left: 56%;
+    margin-right: 3vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 } 
 
 .elem h5{
+    position: absolute;
+    z-index: 99;
     padding-top: 30px;
     margin-left: 15vw;
     font-size: 1.5vw;
 }
 
 .e1 h5{
+    position: absolute;
+    z-index: 99;
+    left: 60%;
     margin-right: 15vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 } 
+.elem:nth-child(5){
+    height: 20vh;
+    border: none;
+    /* overflow: hi; */
+}
