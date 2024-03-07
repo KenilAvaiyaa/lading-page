@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width : 100%;
+    font-family: "gilroy";
+    
+    
+}
+
+.loder{
+    /* opacity: 0; */
+    /* display: none; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #EEE9CC;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loder .nameani {
+    margin-left: 1px;
+    overflow: hidden;
+    width: 1.6vw;
+    align-items: center;
+}
+
+.nameani .t2{
+    width: 2vw;
+    align-items: center;
+}
+
+.loder p{
+    /* text-w: ; */
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight:bolder;
+    color: #1E1915;
+}
+
+
+
+
+
+
+
+.page1 {
+    height: 120vh;
+    width: 100%;
+    background-image: url(https://maelanlemeur.com/wp-content/uploads/2023/01/FermeDeKerbiguet.webp);
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.elem{
+    border-bottom: 2px solid #EEE9CC;
+    height: 25vh;
+    position: relative;
+    color: #EEE9CC;
+    align-items: center;
+}
+
+.elem h1{
+    margin-left: 3vw;
+    font-size:10vw;
+}
+
+.e2 h1{
+margin-right: 3vw;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+} 
+
+.elem h5{
+    padding-top: 30px;
+    margin-left: 15vw;
+    font-size: 1.5vw;
+}
+
+.e1 h5{
+    margin-right: 15vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
